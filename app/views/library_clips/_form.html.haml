@@ -1,0 +1,19 @@
+= form_for @library_clip do |f|
+  -if @library_clip.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@library_clip.errors.count, "error")} prohibited this library_clip from being saved:"
+      %ul
+        - @library_clip.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :live_id
+    = f.text_field :live_id
+  .field
+    = f.label :song_id
+    = f.text_field :song_id
+  .field
+    = f.label :length
+    = f.text_field :length
+  .actions
+    = f.submit 'Save'

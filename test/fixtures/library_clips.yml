@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  live_id: MyString
+  song_id: 1
+  length: 1
+
+two:
+  live_id: MyString
+  song_id: 1
+  length: 1

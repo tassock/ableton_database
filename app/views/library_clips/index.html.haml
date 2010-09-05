@@ -1,0 +1,23 @@
+%h1 Listing library_clips
+
+%table
+  %tr
+    %th Live
+    %th Song
+    %th Length
+    %th
+    %th
+    %th
+
+  - @library_clips.each do |library_clip|
+    %tr
+      %td= library_clip.live_id
+      %td= library_clip.song_id
+      %td= library_clip.length
+      %td= link_to 'Show', library_clip
+      %td= link_to 'Edit', edit_library_clip_path(library_clip)
+      %td= link_to 'Destroy', library_clip, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New library_clip', new_library_clip_path

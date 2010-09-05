@@ -1,5 +1,7 @@
 Sequencer::Application.routes.draw do
   
+  resources :library_clips
+
   resources :library_songs
   
   # The priority is based upon order of creation:

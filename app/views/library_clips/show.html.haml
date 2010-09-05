@@ -1,0 +1,13 @@
+%p
+  %b Live:
+  = @library_clip.live_id
+%p
+  %b Song:
+  = @library_clip.song_id
+%p
+  %b Length:
+  = @library_clip.length
+
+= link_to 'Edit', edit_library_clip_path(@library_clip)
+\|
+= link_to 'Back', library_clips_path
