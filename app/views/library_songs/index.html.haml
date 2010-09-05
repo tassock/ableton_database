@@ -1,4 +1,4 @@
 - @library_songs.each do |song|
-  %li= song.name
+  %li= link_to song.name, library_song_path(song)
   
 = link_to 'New', :action => 'new'

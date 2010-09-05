@@ -1,0 +1,5 @@
+%h2= @library_song.name
+
+%h3 Clips
+- @library_song.library_clips.each do |clip|
+  %li= clip.live_id

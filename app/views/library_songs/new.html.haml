@@ -1,3 +1,5 @@
-- form_for @library_song do |f|
-  = render :partial => 'form', :locals => {:f => f}
-  = f.submit 'Create'
+%h1 New Song
+
+= render 'form'
+
+= link_to 'Back', library_songs_path

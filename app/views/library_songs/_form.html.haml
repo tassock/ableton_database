@@ -1,20 +1,25 @@
-%dl
-  %dt 
-    %label Artist
-  %dd= f.text_field :artist
-  
-  %dt
-    %label Title
-  %dd= f.text_field :title
-  
-  %dt
-    %label BPM
-  %dd= f.text_field :bpm
-  
-  %dt
-    %label Key
-  %dd= f.text_field :key
-  
-  %dt
-    %label Major
-  %dd= f.text_field :major
+= form_for @library_song do |f|
+  -if @library_song.errors.any?
+    #errorExplanation.error
+      %h2= "#{pluralize(@library_song.errors.count, "error")} prohibited this library_song from being saved:"
+      %ul
+        - @library_song.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :artist
+    = f.text_field :artist
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :bpm
+    = f.text_field :bpm
+  .field
+    = f.label :key
+    = f.text_field :key
+  .field
+    = f.label :major
+    = f.text_field :major
+  .actions
+    = f.submit 'Save'
