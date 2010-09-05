@@ -1,0 +1,17 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %title
+      Ableton Database
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+  %body.two-col.bp
+    #container
+      #navigation
+        %ul.navigation_list
+          %li= link_to 'Songs', library_songs_path
+          %li= link_to 'Clips', library_clips_path
+      #content
+        = yield

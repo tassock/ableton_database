@@ -31,6 +31,8 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    compass (0.10.5)
+      haml (>= 3.0.4)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.6)
@@ -73,6 +75,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (>= 0.10.5)
   haml-rails
   rails (= 3.0.0)
   sqlite3-ruby

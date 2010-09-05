@@ -1,0 +1,109 @@
+/*
+Syntax error: Undefined mixin 'column'.
+        on line 9 of /Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass, in `column'
+        from line 9 of /Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass
+
+4:   
+5: input
+6:   font-size: 18px
+7:   
+8: #navigation
+9:   +column(24)
+10:   ul.navigation_list
+11:     list-style-type: none
+12:     padding: 0
+13:     li a
+14:       display: block
+
+Backtrace:
+/Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass:9:in `column'
+/Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass:9
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/mixin_node.rb:74:in `perform!'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:301:in `_perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:209:in `perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `perform_children'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `map'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `perform_children'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:313:in `perform!'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/rule_node.rb:188:in `perform!'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:301:in `_perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:209:in `perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `perform_children'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `map'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:322:in `perform_children'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:313:in `perform!'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/root_node.rb:59:in `perform!'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:301:in `_perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/node.rb:209:in `perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/root_node.rb:37:in `perform'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/tree/root_node.rb:29:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:221:in `update_stylesheet'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:86:in `update_stylesheets'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:79:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:79:in `update_stylesheets'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:77:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:77:in `update_stylesheets'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin.rb:51:in `check_for_updates'
+/opt/local/lib/ruby/gems/1.8/gems/gems/haml-3.0.6/lib/sass/plugin/rack.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:148:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:93:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:92:in `recognize'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:139:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/commands/server.rb:65:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/commands.rb:30
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/commands.rb:27:in `tap'
+/opt/local/lib/ruby/gems/1.8/gems/gems/railties-3.0.0/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'column'.\A         on line 9 of /Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass, in `column'\A         from line 9 of /Users/petermarks/Desktop/ableton_database/app/stylesheets/main.sass\A \A 4:   \A 5: input\A 6:   font-size: 18px\A 7:   \A 8: #navigation\A 9:   +column(24)\A 10:   ul.navigation_list\A 11:     list-style-type: none\A 12:     padding: 0\A 13:     li a\A 14:       display: block"; }
