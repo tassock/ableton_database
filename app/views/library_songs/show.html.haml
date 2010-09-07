@@ -3,3 +3,5 @@
 %h3 Clips
 - @library_song.library_clips.each do |clip|
   %li= clip.live_id
+  
+= link_to 'Add new clip', new_library_song_library_clip_path(@library_song)

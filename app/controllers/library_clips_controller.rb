@@ -1,4 +1,7 @@
 class LibraryClipsController < ApplicationController
+  
+  before_filter :get_library_song
+  
   # GET /library_clips
   # GET /library_clips.xml
   def index
@@ -44,7 +47,7 @@ class LibraryClipsController < ApplicationController
 
     respond_to do |format|
       if @library_clip.save
-        format.html { redirect_to(@library_clip, :notice => 'Library clip was successfully created.') }
+        format.html { redirect_to(@library_song, :notice => 'Library clip was successfully created.') }
         format.xml  { render :xml => @library_clip, :status => :created, :location => @library_clip }
       else
         format.html { render :action => "new" }
@@ -60,7 +63,7 @@ class LibraryClipsController < ApplicationController
 
     respond_to do |format|
       if @library_clip.update_attributes(params[:library_clip])
-        format.html { redirect_to(@library_clip, :notice => 'Library clip was successfully updated.') }
+        format.html { redirect_to(@library_song, :notice => 'Library clip was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,5 +82,11 @@ class LibraryClipsController < ApplicationController
       format.html { redirect_to(library_clips_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  
+  def get_library_song
+    @library_song = LibrarySong.find params[:library_song_id]
   end
 end

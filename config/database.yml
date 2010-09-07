@@ -2,7 +2,8 @@
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
   adapter: sqlite3
-  database: db/sequencer.db
+  database: ~/Documents/Open Frameworks/of_preRelease_v0061_osxSL_FAT/apps/addonsExamples/osc_sequencer/bin/data/sequencer.db
+  #database: db/sequencer.db
   pool: 5
   timeout: 5000
 

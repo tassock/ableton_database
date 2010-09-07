@@ -1,19 +1,26 @@
-= form_for @library_clip do |f|
+= form_for([@library_song, @library_clip]) do |f|
   -if @library_clip.errors.any?
     #errorExplanation.error
       %h2= "#{pluralize(@library_clip.errors.count, "error")} prohibited this library_clip from being saved:"
       %ul
         - @library_clip.errors.full_messages.each do |msg|
           %li= msg
-
-  .field
-    = f.label :song_id
-    = f.collection_select :song_id, LibrarySong.all, :id, :name, :prompt => true
+  
+  - if @library_song
+    = f.hidden_field :song_id, :value => @library_song.id
+  - else
+    .field
+      = f.label :song_id
+      = f.collection_select :song_id, LibrarySong.all, :id, :name, :prompt => true
   .field
     %label Live id
-    = f.text_field :live_id
+    - val = @library_song ? "#{@library_song.id}_#{@library_song.library_clips.length + 1}" : ""
+    = f.text_field :live_id, :value => val
   .field
     = f.label :length
     = f.text_field :length
+  .field
+    = f.label :loopable
+    = f.check_box :loopable
   .actions
     = f.submit 'Save'

@@ -1,8 +1,12 @@
 Sequencer::Application.routes.draw do
   
-  resources :library_clips
+  # resources :library_clips
+  
+  root :to => 'library_songs#index'
 
-  resources :library_songs
+  resources :library_songs do
+    resources :library_clips
+  end
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

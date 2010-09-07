@@ -12,6 +12,9 @@
       #navigation
         %ul.navigation_list
           %li= link_to 'Songs', library_songs_path
-          %li= link_to 'Clips', library_clips_path
+          / %li= link_to 'Clips', library_clips_path
+      - if params[:notice]
+        .error
+          = params[:notice]
       #content
         = yield
