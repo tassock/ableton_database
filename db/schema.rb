@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100907043018) do
+ActiveRecord::Schema.define(:version => 20101013063033) do
+
+  create_table "auto_lanes", :force => true do |t|
+    t.integer "sequence_id"
+    t.text    "name"
+  end
+
+# Could not dump table "auto_points" because of following StandardError
+#   Unknown type 'REAL' for column 'val'
+
+  create_table "clips", :force => true do |t|
+    t.text    "live_id"
+    t.integer "song_id"
+  end
 
   create_table "library_clips", :force => true do |t|
     t.text    "live_id"
@@ -23,8 +36,14 @@ ActiveRecord::Schema.define(:version => 20100907043018) do
     t.text    "artist"
     t.text    "title"
     t.integer "bpm"
-    t.integer "key"
-    t.boolean "major"
+    t.integer "first_key"
+    t.boolean "first_major"
+    t.integer "second_key"
+    t.boolean "second_major"
+    t.string  "file_type"
+    t.float   "volume"
+    t.float   "pitch"
+    t.date    "analysis_date"
   end
 
   create_table "params", :force => true do |t|
@@ -58,6 +77,13 @@ ActiveRecord::Schema.define(:version => 20100907043018) do
 
   create_table "sequences", :force => true do |t|
     t.text "name"
+  end
+
+  create_table "song_tags", :force => true do |t|
+    t.string   "name"
+    t.integer  "library_song_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
